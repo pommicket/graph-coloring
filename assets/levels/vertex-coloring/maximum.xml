@@ -1,0 +1,19 @@
+<level title="Highest E-V" description="There is now a limit to the number of vertices you can have of each color." objective="+1 point per edge, -1 point per vertex"/>
+<colors>
+    <color color="#FF0000" name="red"/>
+    <color color="#00FF00" name="green"/>
+    <color color="#0000FF" name="blue"/>
+</colors>
+<graph>
+</graph>
+<rules>
+    <edge-rule v1="same" v2="same"/>
+    <edge-rule v1="red"  v2="green"/>
+    <vertex-maximum color="red" max="5"/>
+    <vertex-maximum color="green" max="3"/>
+    <vertex-maximum color="blue" max="2"/>
+</rules>
+<values>
+    <op op="-" id="points" val1="E" val2="V"/>
+    <var id="objective" val="6"/>
+</values>

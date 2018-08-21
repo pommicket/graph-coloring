@@ -1,0 +1,28 @@
+<level title="Maximal Eulerian Path" description="Add as many edges as possible while still having an Eulerian path.;No two adjacent vertices can have the same color." objective="+1 point per edge, +3 points per edge in path"/>
+<global-vertex-protections protect="acd"/>
+<colors>
+    <color color="#FF0000" name="red"/>
+    <color color="#00FF00" name="green"/>
+    <color color="#0000FF" name="blue"/>
+</colors>
+<graph>
+    <vertex x="200" y="450" id="l" color="red"/>
+    <vertex x="300" y="400" id="top-l" color="red"/>
+    <vertex x="400" y="350" id="top-m" color="green"/>
+    <vertex x="500" y="400" id="top-r" color="blue"/>
+    <vertex x="300" y="500" id="bot-l" color="red"/>
+    <vertex x="400" y="550" id="bot-m" color="green"/>
+    <vertex x="500" y="500" id="bot-r" color="blue"/>
+    <vertex x="600" y="450" id="r" color="blue"/>
+</graph>
+<rules>
+    <edge-rule v1="same" v2="same"/>
+</rules>
+<path points="0">
+    <edge color="any" op="+" val="3"/>
+</path>
+<values>
+    <op id="points" op="-" val1="E" val2="20"/>
+    <var id="objective" val="56"/>
+</values>
+ 

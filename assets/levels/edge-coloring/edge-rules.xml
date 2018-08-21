@@ -1,0 +1,20 @@
+<level title="Edge Rules" description="There are now rules about which color edges can be." objective="Create as many edges as possible"/>
+<global-vertex-protections protect="ad"/>
+<colors>
+    <color color="#FF0000" name="red"/>
+    <color color="#0000FF" name="blue"/>
+</colors>
+<graph>
+    <vertex x="300" y="300" color="red"/>
+    <vertex x="500" y="300" color="red"/>
+    <vertex x="300" y="500" color="blue"/>
+    <vertex x="500" y="500" color="blue"/>
+</graph>
+<rules>
+    <edge-rule v1="same" edge="same" v2="same"/>
+    <edge-rule v1="red"  edge="red"  v2="blue"/>
+</rules>
+<values>
+    <var id="points" val="E"/>
+    <var id="objective" val="6"/>
+</values>

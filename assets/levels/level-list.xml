@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<category-listing version="0.0.0">
+	<category name="Introduction to Graphs" id="intro" color="#AAAAAA">
+		<level id="vertices"/>
+		<level id="edges"/>
+		<level id="degrees"/>
+	</category>
+	<category name="Vertex Colorings" id="vertex-coloring" color="#DD0000">
+		<level id="colors"/>
+		<level id="vertex-coloring"/>
+		<level id="more-rules"/>
+		<level id="max-edges"/>
+        <level id="maximum"/>
+	</category>
+    <category name="Edge Colorings" id="edge-coloring" color="#00DD00">
+        <level id="coloring-edges"/>
+        <level id="edge-rules"/>
+        <level id="three-of-each"/>
+        <level id="create-edges"/>
+        <level id="create-graph"/>
+    </category>
+    <category name="Connectedness" id="connectedness" color="#DD44DD">
+        <level id="connectedness"/>
+        <level id="connect"/>
+        <level id="multiple-components"/>
+        <level id="negative-points"/>
+        <level id="3x3"/>
+    </category>
+    <category name="Eulerian Cycles &amp; Paths" id="eulerian" color="#DDDD00">
+        <level id="cycles"/>
+        <level id="add-edges-cycle"/>
+        <level id="paths"/>
+        <level id="add-edges-path"/>
+        <level id="double-add-one"/>
+    </category>
+    <category name="Graph Editor" id="editor" color="#DDDDDD">
+        <level id="graph-editor"/>
+    </category>
+</category-listing>

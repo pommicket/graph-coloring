@@ -1,0 +1,13 @@
+<level title="Degrees" description="A vertex's degree is the number of edges which connect to it." objective="Give the vertex a degree of 5."/>
+<global-vertex-protections protect="d"/>
+<colors>
+    <color color="#FF0000" name="red"/>
+</colors>
+<graph>
+    <vertex x="300" y="300" id="v"/>
+</graph>
+<values>
+    <op op="degree" id="d" val1="v"/>
+    <op op="min" id="points" val1="d" val2="5"/>
+    <var id="objective" val="5"/>
+</values>

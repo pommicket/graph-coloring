@@ -1,0 +1,34 @@
+<level title="Connect this graph" description="Every edge color subtracts some number of points." objective="Make this graph connected."/>
+<global-vertex-protections protect="acd"/>
+<colors>
+    <color color="#FF0000" name="red" edge-points="-4"/>
+    <color color="#00FF00" name="green" edge-points="-3"/>
+    <color color="#0000FF" name="blue" edge-points="-2"/>
+    <color color="#FFFF00" name="yellow" edge-points="-1"/>
+</colors>
+<graph>
+    <vertex x="250" y="250" color="red" origin="t"/>
+    <vertex x="250" y="350" color="red"/>
+    <vertex x="250" y="450" color="red"/>
+    <vertex x="250" y="550" color="red"/>
+    <vertex x="350" y="300" color="green"/>
+    <vertex x="350" y="400" color="green"/>
+    <vertex x="350" y="500" color="green"/>
+    <vertex x="450" y="350" color="blue"/>
+    <vertex x="450" y="450" color="blue"/>
+    <vertex x="550" y="400" color="yellow"/>
+</graph>
+<rules>
+    <edge-rule v1="same" v2="same"/>
+    <edge-rule v1="same" edge="same"/>
+    <edge-maximum color="yellow" max="1"/>
+    <edge-maximum color="blue" max="2"/>
+    <edge-maximum color="green" max="3"/>
+    <edge-maximum color="red" max="4"/>
+    <connected/>
+</rules>
+<values>
+    <var id="points" val="46"/>
+    <var id="objective" val="20"/>
+</values>
+ 

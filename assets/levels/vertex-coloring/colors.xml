@@ -1,0 +1,16 @@
+<level title="Coloring" description="Click on a vertex to color it." objective="Change the color of the vertex."/>
+<global-vertex-protections protect="ad"/>
+<colors>
+    <color color="#FF0000" name="red"/>
+    <color color="#00FF00" name="green"/>
+    <color color="#0000FF" name="blue"/>
+</colors>
+<graph>
+    <vertex x="300" y="300" id="v" color="red"/>
+</graph>
+<values>
+    <op op="vertex-color" id="v_color" val1="v"/>
+    <op op="!=" id="is_changed" val1="v_color" val2="red"/>
+    <op op="*" id="points" val1="is_changed" val2="5"/>
+    <var id="objective" val="5"/>
+</values>

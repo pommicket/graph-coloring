@@ -1,0 +1,25 @@
+<level title="Create nine edges" description="Press R to see the rules. A white edge or vertex means one of any color." objective="Create three edges of each color"/>
+<global-vertex-protections protect="acd"/>
+<colors>
+    <color color="#FF0000" name="red"/>
+    <color color="#00FF00" name="green"/>
+    <color color="#0000FF" name="blue"/>
+</colors>
+<graph>
+    <vertex x="300" y="350" color="red"/>
+    <vertex x="400" y="300" color="green"/>
+    <vertex x="500" y="350" color="blue"/>
+    
+    <vertex x="300" y="500" color="red"/>
+    <vertex x="400" y="550" color="green"/>
+    <vertex x="500" y="500" color="blue"/>
+</graph>
+<rules>
+    <edge-rule v1="same" v2="same"/>
+    <edge-rule v1="same" edge="same"/>
+    <edge-maximum color="same" max="3"/>
+</rules>
+<values>
+    <var id="points" val="E"/>
+    <var id="objective" val="9"/>
+</values>

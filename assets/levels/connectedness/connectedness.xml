@@ -1,0 +1,17 @@
+<level title="Connectedness" description="A graph is connected if there is a path between any two vertices.;Filled in vertices are vertices which are connected to the origin vertex." objective="Make this graph connected."/>
+<global-vertex-protections protect="acd"/>
+<colors>
+    <color color="#FF0000" name="red"/>
+</colors>
+<graph>
+    <vertex x="300" y="400" color="red" origin="t"/>
+    <vertex x="400" y="550" color="red"/>
+    <vertex x="500" y="400" color="red"/>
+</graph>
+<rules>
+    <connected/>
+</rules>
+<values>
+    <var id="points" val="5"/>
+    <var id="objective" val="5"/>
+</values>

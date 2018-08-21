@@ -1,0 +1,45 @@
+<level title="Vertex Colorings" description="Press R to see which colors can connect to which. Use at least one vertex of each color." objective="Color the graph so that it follows the rules."/>
+<global-vertex-protections protect="ad"/>
+<global-edge-protections   protect="ad"/>
+<colors>
+    <color color="#FF0000" name="red"/>
+    <color color="#00FF00" name="green"/>
+    <color color="#0000FF" name="blue"/>
+    <color color="#FFFF00" name="yellow"/>
+</colors>
+<graph>
+    <vertex x="250" y="250" id="top1"/>
+    <vertex x="350" y="320" id="top2"/>
+    <vertex x="450" y="320" id="top3"/>
+    <vertex x="550" y="250" id="top4"/>
+    <vertex x="300" y="400" id="mid1"/>
+    <vertex x="500" y="400" id="mid2"/>
+    <vertex x="550" y="500" id="bot1"/>
+    
+    <edge v1="top1" v2="top2"/>
+    <edge v1="top2" v2="top3"/>
+    <edge v1="top3" v2="top4"/>
+    <edge v1="top1" v2="top4"/>
+    
+    <edge v1="mid1" v2="mid2"/>
+    
+    <edge v1="top1" v2="mid1"/>
+    <edge v1="top2" v2="mid1"/>
+    <edge v1="top3" v2="mid2"/>
+    <edge v1="top4" v2="mid2"/>
+    
+    <edge v1="top4" v2="bot1"/>
+    <edge v1="mid1" v2="bot1"/>
+</graph>
+<rules>
+    <edge-rule v1="same" v2="same"/>
+    
+    <edge-rule v1="red" v2="green"/>
+    <edge-rule v1="red" v2="blue"/>
+    
+    <vertex-minimum color="same" min="1"/>
+</rules>
+<values>
+    <var id="points" val="15"/>
+    <var id="objective" val="15"/>
+</values>

@@ -1,0 +1,11 @@
+<level title="Vertices" description="Press v to make a vertex (and press x to delete it)." objective="Create four more vertices."/>
+<colors>
+    <color color="#FF0000" name="red"/>
+</colors>
+<graph>
+    <vertex x="300" y="300" id="v1"/>
+</graph>
+<values>
+    <op op="min" id="points" val1="V" val2="5"/> 
+    <var id="objective" val="5"/>
+</values>

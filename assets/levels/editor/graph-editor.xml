@@ -1,0 +1,17 @@
+<level title="Graph Editor" description="Create any graph you want."/>
+<colors>
+    <color color="#FFFFFF" name="white"/>
+    <color color="#666666" name="gray"/>
+    <color color="#FF0000" name="red"/>
+    <color color="#00FF00" name="green"/>
+    <color color="#0000FF" name="blue"/>
+    <color color="#FFFF00" name="yellow"/>
+    <color color="#FF00FF" name="magenta"/>
+    <color color="#00FFFF" name="cyan"/>
+</colors>
+<graph />
+<rules />
+<values>
+    <var id="points" val="0"/>
+    <var id="objective" val="1"/>
+</values>

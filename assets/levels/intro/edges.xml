@@ -1,0 +1,14 @@
+<level title="Edges" description="Press E to start or end an edge while hovering over a vertex." objective="Connect the two vertices."/>
+<global-vertex-protections protect="ad"/>
+<colors>
+    <color color="#FF0000" name="red"/>
+</colors>
+<graph>
+    <vertex x="300" y="300" id="v1"/>
+    <vertex x="400" y="400" id="v2"/>
+</graph>
+<values>
+    <op op="connected" id="is_connected" val1="v1" val2="v2"/> 
+    <op op="*" id="points" val1="is_connected" val2="5"/>
+    <var id="objective" val="5"/>
+</values>

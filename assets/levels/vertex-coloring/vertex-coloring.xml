@@ -1,0 +1,29 @@
+<level title="Vertex Colorings" description="A vertex coloring is a coloring where no two vertices of the same color are connected." objective="Find a vertex coloring of this graph."/>
+<global-vertex-protections protect="ad"/>
+<global-edge-protections   protect="ad"/>
+<colors>
+    <color color="#FF0000" name="red"/>
+    <color color="#00FF00" name="green"/>
+    <color color="#0000FF" name="blue"/>
+</colors>
+<graph>
+    <vertex x="400" y="280" id="top"/>
+    <vertex x="300" y="380" id="top-l"/>
+    <vertex x="500" y="380" id="top-r"/>
+    <vertex x="300" y="530" id="bot-l"/>
+    <vertex x="500" y="530" id="bot-r"/>
+    <edge v1="top" v2="top-l"/>
+    <edge v1="top" v2="top-r"/>
+    <edge v1="top-l" v2="top-r"/>
+    <edge v1="top-l" v2="bot-l"/>
+    <edge v1="top-l" v2="bot-r"/>
+    <edge v1="top-r" v2="bot-r"/>
+    <edge v1="bot-l" v2="bot-r"/>
+</graph>
+<rules>
+    <edge-rule v1="same" v2="same"/>
+</rules>
+<values>
+    <var id="points" val="10"/>
+    <var id="objective" val="10"/>
+</values>

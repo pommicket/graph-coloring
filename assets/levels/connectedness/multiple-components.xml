@@ -1,0 +1,41 @@
+<level title="Connect this graph" description="Use as few edges as possible." objective="Make this graph connected."/>
+<global-vertex-protections protect="acd"/>
+<colors>
+    <color color="#FF0000" name="red"/>
+    <color color="#00FF00" name="green"/>
+    <color color="#0000FF" name="blue"/>
+    <color color="#FFFF00" name="yellow"/>
+    <color color="#FF00FF" name="magenta"/>
+</colors>
+<graph>
+    <vertex x="250" y="300" color="red" origin="t"/>
+    <vertex x="350" y="300" color="red"/>
+    <vertex x="450" y="300" color="red"/>
+    <vertex x="550" y="300" color="red"/>
+    <vertex x="250" y="400" color="green"/>
+    <vertex x="350" y="400" color="green"/>
+    <vertex x="450" y="400" color="green"/>
+    <vertex x="550" y="400" color="green"/>
+    <vertex x="250" y="500" color="blue"/>
+    <vertex x="350" y="500" color="blue"/>
+    <vertex x="450" y="500" color="blue"/>
+    <vertex x="550" y="500" color="blue"/>
+    <vertex x="250" y="600" color="yellow"/>
+    <vertex x="350" y="600" color="yellow"/>
+    <vertex x="450" y="600" color="yellow"/>
+    <vertex x="550" y="600" color="yellow"/>
+    <vertex x="650" y="600" color="magenta"/>
+</graph>
+<rules>
+    <edge-rule v1="same" v2="same"/>
+    <edge-rule v1="red" v2="blue"/>
+    <edge-rule v1="red" v2="yellow"/>
+    <edge-rule v1="green" v2="blue"/>
+    <edge-rule v1="green" v2="yellow"/>
+    <connected/>
+</rules>
+<values>
+    
+    <op id="points" val1="26" op="-" val2="E"/>
+    <var id="objective" val="10"/>
+</values>

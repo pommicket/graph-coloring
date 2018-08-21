@@ -1,0 +1,38 @@
+<level title="Eulerian Cycles" description="Every graph where all the vertices have an even degree has an Eulerian cycle.;An Eulerian cycle is a cycle through the graph that goes through each edge exactly once.;Right-click vertices in the order of an Eulerian cycle.;Press E to cancel your cycle." objective="Find an Eulerian cycle."/>
+<global-vertex-protections protect="acd"/>
+<global-edge-protections protect="acd"/>
+<colors>
+    <color color="#FF0000" name="red"/>
+</colors>
+<graph>
+    <vertex x="300" y="400" id="top-l"/>
+    <vertex x="400" y="350" id="top-m"/>
+    <vertex x="500" y="400" id="top-r"/>
+    <vertex x="300" y="500" id="bot-l"/>
+    <vertex x="400" y="550" id="bot-m"/>
+    <vertex x="500" y="500" id="bot-r"/>
+    
+    <edge v1="top-l" v2="top-r"/>
+    <edge v1="top-l" v2="bot-l"/>
+    <edge v1="top-l" v2="bot-m"/>
+    <edge v1="top-l" v2="bot-r"/>
+    
+    <edge v1="top-m" v2="bot-l"/>
+    <edge v1="top-m" v2="bot-r"/>
+    
+    <edge v1="top-r" v2="bot-l"/>
+    <edge v1="top-r" v2="bot-m"/>
+    <edge v1="top-r" v2="bot-r"/>
+    
+    
+    <edge v1="bot-l" v2="bot-r"/>
+</graph>
+<rules/>
+<cycle points="0">
+    <edge color="any" op="+" val="1"/>
+</cycle>
+<values>
+    <var id="points" val="0"/>
+    <var id="objective" val="E"/>
+</values>
+ 
